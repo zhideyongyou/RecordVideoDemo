@@ -1,0 +1,127 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <description>业务支撑组Android代码检查规范配置文件</description>
+    <option name="myName" value="BusinessSupportGroupInspectionsProfile" />
+    <inspection_tool class="CStyleArrayDeclaration" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="ClassNamingConvention" enabled="true" level="ERROR" enabled_by_default="true">
+      <option name="m_regex" value="(^[A-Z][a-zA-Z0-9]*$)" />
+      <option name="m_minLength" value="0" />
+      <option name="m_maxLength" value="0" />
+    </inspection_tool>
+    <inspection_tool class="ConstantNamingConvention" enabled="true" level="ERROR" enabled_by_default="true">
+      <option name="onlyCheckImmutables" value="false" />
+      <option name="m_regex" value="^log(ger)?|[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$" />
+      <option name="m_minLength" value="0" />
+      <option name="m_maxLength" value="0" />
+    </inspection_tool>
+    <inspection_tool class="InstanceMethodNamingConvention" enabled="true" level="ERROR" enabled_by_default="true">
+      <option name="m_regex" value="(^[a-z][a-zA-Z0-9]*$)" />
+      <option name="m_minLength" value="0" />
+      <option name="m_maxLength" value="0" />
+    </inspection_tool>
+    <inspection_tool class="InstanceVariableNamingConvention" enabled="true" level="ERROR" enabled_by_default="true">
+      <option name="m_regex" value="^[a-z][a-zA-Z0-9]*$" />
+      <option name="m_minLength" value="0" />
+      <option name="m_maxLength" value="0" />
+    </inspection_tool>
+    <inspection_tool class="InterfaceNamingConvention" enabled="true" level="ERROR" enabled_by_default="true">
+      <option name="m_regex" value="(^[A-Z][a-zA-Z0-9]*$)" />
+      <option name="m_minLength" value="0" />
+      <option name="m_maxLength" value="0" />
+    </inspection_tool>
+    <inspection_tool class="LiteralAsArgToStringEquals" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="LocalVariableNamingConvention" enabled="true" level="ERROR" enabled_by_default="true">
+      <option name="m_ignoreForLoopParameters" value="false" />
+      <option name="m_ignoreCatchParameters" value="false" />
+      <option name="m_regex" value="(^[a-z][a-zA-Z0-9]*$)" />
+      <option name="m_minLength" value="0" />
+      <option name="m_maxLength" value="0" />
+    </inspection_tool>
+    <inspection_tool class="LoggerInitializedWithForeignClass" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="loggerClassName" value="org.apache.log4j.Logger,org.slf4j.LoggerFactory,org.apache.commons.logging.LogFactory,java.util.logging.Logger" />
+      <option name="loggerFactoryMethodName" value="getLogger,getLogger,getLog,getLogger" />
+    </inspection_tool>
+    <inspection_tool class="MultipleDeclaration" enabled="true" level="ERROR" enabled_by_default="true">
+      <option name="ignoreForLoopDeclarations" value="true" />
+    </inspection_tool>
+    <inspection_tool class="NativeMethodNamingConvention" enabled="false" level="ERROR" enabled_by_default="false">
+      <option name="m_regex" value="(^[a-z][a-zA-Z0-9]*$)" />
+      <option name="m_minLength" value="0" />
+      <option name="m_maxLength" value="0" />
+    </inspection_tool>
+    <inspection_tool class="OnDemandImport" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="PackageNamingConvention" enabled="true" level="ERROR" enabled_by_default="true">
+      <option name="m_regex" value="^[a-z]+(\.[a-z][a-z0-9]*)*$" />
+      <option name="m_minLength" value="0" />
+      <option name="m_maxLength" value="0" />
+    </inspection_tool>
+    <inspection_tool class="ParameterNamingConvention" enabled="true" level="ERROR" enabled_by_default="true">
+      <option name="m_regex" value="(^[a-z][a-zA-Z0-9]*$)" />
+      <option name="m_minLength" value="0" />
+      <option name="m_maxLength" value="0" />
+    </inspection_tool>
+    <inspection_tool class="SSBasedInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <searchConfiguration name="TextView should prefix with tv" text="TextView $name$" recursive="true" caseInsensitive="true" type="JAVA">
+        <constraint name="name" regexp="^(?!tv[A-Z]).*$" within="" contains="" />
+        <constraint name="__context__" target="true" within="" contains="" />
+      </searchConfiguration>
+      <searchConfiguration name="Button should prefix with btn" text="Button $name$" recursive="true" caseInsensitive="true" type="JAVA">
+        <constraint name="name" regexp="^(?!btn[A-Z]).*$" within="" contains="" />
+        <constraint name="__context__" target="true" within="" contains="" />
+      </searchConfiguration>
+      <searchConfiguration name="EditText should prefix with et" text="EditText $name$" recursive="true" caseInsensitive="true" type="JAVA">
+        <constraint name="name" regexp="^(?!et[A-Z]).*$" within="" contains="" />
+        <constraint name="__context__" target="true" within="" contains="" />
+      </searchConfiguration>
+      <searchConfiguration name="CheckBox should prefix with cb" text="CheckBox $name$" recursive="true" caseInsensitive="true" type="JAVA">
+        <constraint name="name" regexp="^(?!cb[A-Z]).*$" within="" contains="" />
+        <constraint name="__context__" target="true" within="" contains="" />
+      </searchConfiguration>
+      <searchConfiguration name="RadioGroup should prefix with rgrp" text="RadioGroup $name$" recursive="true" caseInsensitive="true" type="JAVA">
+        <constraint name="name" regexp="^(?!rgrp[A-Z]).*$" within="" contains="" />
+        <constraint name="__context__" target="true" within="" contains="" />
+      </searchConfiguration>
+      <searchConfiguration name="RadioButton should prefix with rbtn" text="RadioButton $name$" recursive="true" caseInsensitive="true" type="JAVA">
+        <constraint name="name" regexp="^(?!rbtn[A-Z]).*$" within="" contains="" />
+        <constraint name="__context__" target="true" within="" contains="" />
+      </searchConfiguration>
+      <searchConfiguration name="ListView should prefix with lv" text="ListView $name$" recursive="true" caseInsensitive="true" type="JAVA">
+        <constraint name="name" regexp="^(?!lv[A-Z]).*$" within="" contains="" />
+        <constraint name="__context__" target="true" within="" contains="" />
+      </searchConfiguration>
+      <searchConfiguration name="RecyclerView should prefix with rv" text="RecyclerView $name$" recursive="true" caseInsensitive="true" type="JAVA">
+        <constraint name="name" regexp="^(?!rv[A-Z]).*$" within="" contains="" />
+        <constraint name="__context__" target="true" within="" contains="" />
+      </searchConfiguration>
+      <searchConfiguration name="LinearLayout should prefix with llyt" text="LinearLayout $name$" recursive="true" caseInsensitive="true" type="JAVA">
+        <constraint name="name" regexp="^(?!llyt[A-Z]).*$" within="" contains="" />
+        <constraint name="__context__" target="true" within="" contains="" />
+      </searchConfiguration>
+      <searchConfiguration name="RelativeLayout should prefix with rlyt" text="RelativeLayout $name$" recursive="true" caseInsensitive="true" type="JAVA">
+        <constraint name="name" regexp="^(?!rlyt[A-Z]).*$" within="" contains="" />
+        <constraint name="__context__" target="true" within="" contains="" />
+      </searchConfiguration>
+      <searchConfiguration name="FrameLayout should prefix with flyt" text="FrameLayout $name$" recursive="true" caseInsensitive="true" type="JAVA">
+        <constraint name="name" regexp="^(?!flyt[A-Z]).*$" within="" contains="" />
+        <constraint name="__context__" target="true" within="" contains="" />
+      </searchConfiguration>
+    </inspection_tool>
+    <inspection_tool class="SimplifiableBooleanExpression" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="SwitchStatementsWithoutDefault" enabled="true" level="ERROR" enabled_by_default="true">
+      <option name="m_ignoreFullyCoveredEnums" value="true" />
+    </inspection_tool>
+    <inspection_tool class="UnusedImport" enabled="true" level="ERROR" enabled_by_default="true" />
+    <inspection_tool class="unused" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="LOCAL_VARIABLE" value="true" />
+      <option name="FIELD" value="true" />
+      <option name="METHOD" value="true" />
+      <option name="CLASS" value="true" />
+      <option name="PARAMETER" value="true" />
+      <option name="REPORT_PARAMETER_FOR_PUBLIC_METHODS" value="true" />
+      <option name="ADD_MAINS_TO_ENTRIES" value="true" />
+      <option name="ADD_APPLET_TO_ENTRIES" value="true" />
+      <option name="ADD_SERVLET_TO_ENTRIES" value="true" />
+      <option name="ADD_NONJAVA_TO_ENTRIES" value="true" />
+    </inspection_tool>
+  </profile>
+</component>
