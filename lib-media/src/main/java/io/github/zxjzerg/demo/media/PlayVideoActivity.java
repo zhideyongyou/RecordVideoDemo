@@ -74,7 +74,7 @@ public class PlayVideoActivity extends AppCompatActivity implements View.OnClick
         // 判断是否
         if (videoPath.contains("http")) {
             mViewProgress.setVisibility(View.VISIBLE);
-            MediaLoader.loadVideo(videoPath, new MediaLoader.OnResponseListener() {
+            MediaUtils.loadVideo(videoPath, new MediaUtils.OnResponseListener() {
                 @Override
                 public void onSuccess(String path) {
                     mViewProgress.setVisibility(View.INVISIBLE);

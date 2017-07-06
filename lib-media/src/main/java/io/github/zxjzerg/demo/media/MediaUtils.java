@@ -14,9 +14,9 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.security.MessageDigest;
 
-public class MediaLoader {
+public class MediaUtils {
 
-    public static final String TAG = MediaLoader.class.getSimpleName();
+    private static final String TAG = MediaUtils.class.getSimpleName();
 
     /** 获取视频文件 */
     public static void loadVideo(String url, OnResponseListener listener) {
@@ -38,7 +38,7 @@ public class MediaLoader {
      * @param url 语音的url
      * @return 本地缓存地址
      */
-    public static String getVideoCachePathFromUrl(String url) {
+    private static String getVideoCachePathFromUrl(String url) {
         if (TextUtils.isEmpty(url)) {
             return null;
         } else {
@@ -46,7 +46,7 @@ public class MediaLoader {
         }
     }
 
-    public static void getMedia(String url, String localPath, OnResponseListener listener) {
+    private static void getMedia(String url, String localPath, OnResponseListener listener) {
         if (TextUtils.isEmpty(url)) {
             Log.e(TAG, "无效的url");
             return;
@@ -187,11 +187,11 @@ public class MediaLoader {
      *
      * @param url The URL of the request.
      */
-    public static String getCacheKey(String url) {
+    private static String getCacheKey(String url) {
         return md5(new StringBuilder(url.length() + 12).append(url).toString());
     }
 
-    public static String md5(String s) {
+    private static String md5(String s) {
         if (TextUtils.isEmpty(s)) {
             return "";
         }
@@ -210,7 +210,7 @@ public class MediaLoader {
         '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'
     };
 
-    public static String toHexString(byte[] b) {
+    private static String toHexString(byte[] b) {
         StringBuilder sb = new StringBuilder(b.length * 2);
         for (int i = 0; i < b.length; i++) {
             sb.append(HEX_DIGITS[(b[i] & 0xf0) >>> 4]);
